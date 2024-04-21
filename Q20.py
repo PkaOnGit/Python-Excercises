@@ -16,6 +16,7 @@ print("insert info of matrix 2")
 Column2 = int(input("Insert column : "))
 Row2 = int(input("Insert row: "))
 
+
 matrix2 = []
 
 for row in range(0,Row2):
@@ -27,8 +28,7 @@ for row in range(0,Row2):
 
 result = [[matrix1[row][column] + matrix2[row][column]  
         for column in range(len(matrix1[0]))] 
-        for row
-        in range(len(matrix2))]
+        for row in range(len(matrix2))]
 
 for r in result:
     print(r)
