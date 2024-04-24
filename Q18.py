@@ -1,3 +1,11 @@
-x = list(input("Enter number seperate each number with space: " ).split( ))
+try:
+    x = list(input("Enter number seperate each number with space: " ).split( ))
 
-print(f"smallest number {min(x)} and biggest number {max(x)}")
+    for i in x:
+        if not type(int(i)) is int:
+            raise TypeError("Error")
+
+    print(f"smallest number {min(x)} and biggest number {max(x)}")
+
+except:
+    print("Error")

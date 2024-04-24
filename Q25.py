@@ -3,7 +3,10 @@ def fibonacci(x):
         return x
     else: return fibonacci(x - 1) + fibonacci(x - 2)
 
-
-y = int(input("Insert number: "))
-
-print(fibonacci(y))
+try:
+    y = int(input("Insert number: "))
+    if not type(y) is int:
+        raise TypeError
+    print(fibonacci(y))
+except:
+    print("Error")
