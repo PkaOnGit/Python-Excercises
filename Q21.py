@@ -8,7 +8,7 @@ try:
     Column2 = int(input("Insert column : "))
     Row2 = int(input("Insert row: "))
 
-    if Column1 != Row2:
+    if Column1 != Row2 :
         exit()
 
     if not type(Column1 and Column2 and Row1 and Row2) is int:

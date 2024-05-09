@@ -3,7 +3,8 @@ try:
 
     for i in x:
         if not type(int(i)) is int:
-            raise TypeError("Error")
+            raise TypeError
+            
 
     print(f"smallest number {min(x)} and biggest number {max(x)}")
 
